@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+      <script src="script.js"></script>
+   </head>
+   <body>
+      <!-- Top logo image -->
+      <div class = "greyback">
+         <a href="index.html"><p class = "toplogo">PINK  FLOYD</p></a>
+      </div>
+      <!-- Navigation bar -->
+      <div class = "greyback">
+         <nav>
+            <ul>
+               <li class="">
+                  <a href="history.html">History</a>
+               </li>
+               <li class="">
+                  <a href="discog.html">Discography</a>
+               </li>
+                  <a href="gallery.html">Gallery</a>
+               </li>
+               <li class="">
+                  <a href="video.html">Video</a>
+               </li>
+               <li class="">
+                  <a href="store.html">Store</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <!-- MAIN -->
+      <div class = "content">
+         <div class = "decadebox">
+            <!-- Recent videos -->
+            <h1> RECENT VIDEOS </h1>
+            <hr></hr>
+            <!-- Embed Youtube -->
+            <div class = "ytplayer">
+               <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed?listType=user_uploads&list=OfficialPinkFloyd" frameborder="0" name = "player"></iframe>
+            </div>
+            <hr></hr>
+            <!-- Twitter Feed -->
+            <h1> TWITTER FEED </h1>
+            <hr></hr>
+            <br>
+            <!-- Embed Feed -->
+            <a href="https://twitter.com/pinkfloyd?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @pinkfloyd</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="twitter-timeline" href="https://twitter.com/pinkfloyd?ref_src=twsrc%5Etfw">Tweets by pinkfloyd</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+            <!-- TOP button -->
+            <button onclick="topFunction()" id="topbutton" title="Go to top">Top</button>
+            <script>
+               // When the user scrolls down 20px from the top of the document, show the button
+               window.onscroll = function() {scrollFunction()};
+
+               function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("topbutton").style.display = "block";
+                  }
+                  else {
+                  document.getElementById("topbutton").style.display = "none";
+                  }
+               }
+
+               // When the user clicks on the button, scroll to the top of the document
+               function topFunction() {
+               document.body.scrollTop = 0;
+               document.documentElement.scrollTop = 0;
+               }
+            </script>
+
+         </div>
+      </div>
+   </body>
+</html>

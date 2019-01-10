@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="../css/mainstyle.css">
+      <script src="../js/js.js"></script>
+      <meta charset="utf-8">
+   </head>
+   <body>
+      <!-- Top logo image -->
+      <div class = "greyback">
+         <a href="../index.html"><p class = "toplogo">PINK  FLOYD</p></a>
+      </div>
+      <!-- Navigation bar -->
+      <div class = "greyback">
+         <nav>
+            <ul>
+               <li class="">
+                  <a href="../history.html">History</a>
+               </li>
+               <li class="">
+                  <a href="../discog.html">Discography</a>
+               </li>
+                  <a href="../gallery.html">Gallery</a>
+               </li>
+               <li class="">
+                  <a href="../video.html">Video</a>
+               </li>
+               <li class="">
+                  <a href="../store.html" class = "activelink">Store</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <!-- MAIN -->
+      <div class = "content">
+         <div class = "decadebox" id = "discog">
+            <br>
+            <!-- Image -->
+            <img src="../media/store/ts_dsom_black.jpg" id = "productimage">
+            <!-- Form -->
+            <div class = "itemform">
+               <h1> Pink Floyd Dark Side of The Moon Wave T Shirt </h1>
+               <h2> £20.00 </h2>
+               <form action = "" method = "post">
+                  <!-- Select Colour -->
+                  <h3> Select Colour</h3>
+                  <select name="colour" required id = "dropdown" onchange="dropdownimage(this);">
+                  <option value="../media/store/ts_dsom_black.jpg">Select Colour</option>
+                  <option value="../media/store/ts_dsom_black.jpg">Black</option>
+                  <option value="../media/store/ts_dsom_white.jpg">Grey</option>
+                  </select>
+                  <!-- Select Size -->
+                  <h3> Select Size</h3>
+                  <select name="size" required>
+                  <option value="">Size</option>
+                  <option value="">XS</option>
+                  <option value="">S</option>
+                  <option value="">M</option>
+                  <option value="">L</option>
+                  <option value="">XL</option>
+                  </select>
+                  <!-- Quantity -->
+                  <h3> Quantity</h3>
+                  <input type="number" name="quantity" min="1" max="5" placeholder="Quantity" value ="1">
+                  <!-- Submit -->
+                  <input type="submit" value="Add To Cart">
+               </form>
+            </div>
+            <script>Breakpoint(25)</script>
+         </div>
+      </div>
+   </body>
+</html>

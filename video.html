@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="css/mainstyle.css">
+      <script src="js/js.js"></script>
+   </head>
+   <body>
+      <!-- Top logo image -->
+      <div class = "greyback">
+         <a href="index.html"><p class = "toplogo">PINK  FLOYD</p></a>
+      </div>
+      <!-- Navigation bar -->
+      <div class = "greyback">
+         <nav>
+            <ul>
+               <li class="">
+                  <a href="history.html">History</a>
+               </li>
+               <li class="">
+                  <a href="discog.html">Discography</a>
+               </li>
+                  <a href="gallery.html">Gallery</a>
+               </li>
+               <li class="">
+                  <a href="video.html" class = "activelink">Video</a>
+               </li>
+               <li class="">
+                  <a href="store.html">Store</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <!-- MAIN -->
+
+      <div class = "content">
+         <div class = "decadebox" id = "discog">
+            <!-- Player -->
+            <br>
+            <div class = "ytplayer">
+               <iframe id="ytplayer" type="text/html" width="640" height="360"
+                 src="https://www.youtube.com/embed?listType=user_uploads&list=OfficialPinkFloyd"
+                 frameborder="0" name = "player"></iframe>
+            </div>
+            <br>
+            <!-- TOP button -->
+            <button onclick="topFunction()" id="topbutton" title="Go to top">Top</button>
+            <script>
+               // When the user scrolls down 20px from the top of the document, show the button
+               window.onscroll = function() {scrollFunction()};
+               function scrollFunction()
+               {
+                  // If page is 20px down
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+                  {
+                     // Show button
+                     document.getElementById("topbutton").style.display = "block";
+                  }
+                  else
+                  {
+                     // Hide Button
+                     document.getElementById("topbutton").style.display = "none";
+                  }
+               }
+               // When the user clicks on the button, scroll to the top of the document
+               function topFunction()
+               {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+               }
+
+            </script>
+            <!-- Music Videos -->
+            <div class = "videothumbnails">
+               <!-- Another Brick -->
+               <a href="https://www.youtube.com/embed/HrxX9TBj2zY" target="player">
+                  <img src = "media/videothumbnails/anotherbrickinthewall.jpg" class = "thumbnail">
+               </a>
+               <!-- Welcome to the machine -->
+               <a href="https://www.youtube.com/embed/fn1R-5p_j5c" target="player">
+                  <img src = "media/videothumbnails/welcometothemachine.jpg" class = "thumbnail">
+               </a>
+               <!-- Nothing part 14 -->
+               <a href="https://www.youtube.com/embed/WiyuG20bhO4" target="player">
+                  <img src = "media/videothumbnails/nothingpart14.jpg" class = "thumbnail">
+               </a>
+               <!-- One of these days -->
+               <a href="https://www.youtube.com/embed/Ea_j7Lc9SYM" target="player">
+                  <img src = "media/videothumbnails/oneofthesedays.jpg" class = "thumbnail">
+               </a>
+               <!-- Take it back -->
+               <a href="https://www.youtube.com/embed/Y5rde4bRIZA" target="player">
+                  <img src = "media/videothumbnails/takeitback.jpg" class = "thumbnail">
+               </a>
+               <!-- Painbox -->
+               <a href="https://www.youtube.com/embed/0vO96jJHOuU" target="player">
+                  <img src = "media/videothumbnails/painbox.jpg" class = "thumbnail">
+               </a>
+               <!-- Sheep -->
+               <a href="https://www.youtube.com/embed/rBDjXCdFNN8" target="player">
+                  <img src = "media/videothumbnails/sheep.jpg" class = "thumbnail">
+               </a>
+               <!-- Money -->
+               <a href="https://www.youtube.com/embed/0kcet4aPpQ" target="player">
+                  <img src = "media/videothumbnails/money.jpg" class = "thumbnail">
+               </a>
+               <!-- Shine on -->
+               <a href="https://www.youtube.com/embed/0lBMs67ZYFY" target="player">
+                  <img src = "media/videothumbnails/shineon.jpg" class = "thumbnail">
+               </a>
+               <!-- high hopes -->
+               <a href="https://www.youtube.com/embed/7jMlFXouPk8" target="player">
+                  <img src = "media/videothumbnails/highhopes.jpg" class = "thumbnail">
+               </a>
+               <!-- Learning to fly -->
+               <a href="https://www.youtube.com/embed/nVhNCTH8pDs" target="player">
+                  <img src = "media/videothumbnails/learningtofly.jpg" class = "thumbnail">
+               </a>
+               <!-- See Emily play -->
+               <a href="https://www.youtube.com/embed/7c0EDM-Yu9o" target="player">
+                  <img src = "media/videothumbnails/seeemilyplay.jpg" class = "thumbnail">
+               </a>
+               <!-- Arnold Layne -->
+               <a href="https://www.youtube.com/embed/H3DGpINHX5Q" target="player">
+                  <img src = "media/videothumbnails/arnoldlayne.jpg" class = "thumbnail">
+               </a>
+               <!-- Gunners Dream -->
+               <a href="https://www.youtube.com/embed/LSE7qdjy3Q0" target="player">
+                  <img src = "media/videothumbnails/gunnersdream.jpg" class = "thumbnail">
+               </a>
+               <!-- Greeen is the colour -->
+               <a href="https://www.youtube.com/embed/4XeWngFZaa" target="player">
+                  <img src = "media/videothumbnails/greenisthecolour.jpg" class = "thumbnail">
+               </a>
+               <!-- Grantchester Meadows -->
+               <a href="https://www.youtube.com/embed/2DAdWcsM7Po" target="player">
+                  <img src = "media/videothumbnails/grantchestermeadows.jpg" class = "thumbnail">
+               </a>
+               <!-- Jugband Blues -->
+               <a href="https://www.youtube.com/embed/jMOynjuAPvM" target="player">
+                  <img src = "media/videothumbnails/jugbandblues.jpg" class = "thumbnail">
+               </a>
+               <!-- Not now John -->
+               <a href="https://www.youtube.com/embed/ajvk1CFIM1M" target="player">
+                  <img src = "media/videothumbnails/notnowjohn.jpg" class = "thumbnail">
+               </a>
+            </div>
+               <br>
+
+            <!-- David Gilmour -->
+            <div class = "videothumbnails">
+               <!-- Rattle that Lock -->
+               <a href="https://www.youtube.com/embed/1ZaEMzJv7_w" target="player">
+                  <img src = "media/videothumbnails/dg_rattlethatlock.jpg" class = "thumbnail">
+               </a>
+               <!-- Comfortably Numb -->
+               <a href="https://www.youtube.com/embed/iG-rhkQalE0" target="player">
+                  <img src = "media/videothumbnails/dg_numb.jpg" class = "thumbnail">
+               </a>
+               <!-- Today -->
+               <a href="https://www.youtube.com/embed/W-Is6k6LUBI" target="player">
+                  <img src = "media/videothumbnails/dg_today.jpg" class = "thumbnail">
+               </a>
+               <br>
+            </div>
+
+            <!-- Roger Waters -->
+            <div class = "videothumbnails">
+               <!-- Pigs -->
+               <a href="https://www.youtube.com/embed/QWLBtMz5OuY" target="player">
+                  <img src = "media/videothumbnails/rw_pigs.jpg" class = "thumbnail">
+               </a>
+               <!-- Time -->
+               <a href="https://www.youtube.com/embed/KPSz7Lv_B_c" target="player">
+                  <img src = "media/videothumbnails/rw_time.jpg" class = "thumbnail">
+               </a>
+               <br>
+            </div>
+
+            <script>Breakpoint(55);</script>
+
+
+         </div>
+      </div>
+   </body>
+</html>
